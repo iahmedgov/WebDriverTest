@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13121" started-at="2016-06-03T17:59:59Z" finished-at="2016-06-03T18:00:12Z">
+  <suite name="Default suite" duration-ms="21521" started-at="2016-07-01T18:57:56Z" finished-at="2016-07-01T18:58:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13121" started-at="2016-06-03T17:59:59Z" finished-at="2016-06-03T18:00:12Z">
-      <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@23a2f9]" name="beforeTest" is-config="true" duration-ms="6777" started-at="2016-06-03T13:59:59Z" finished-at="2016-06-03T14:00:06Z">
+    <test name="Default test" duration-ms="21521" started-at="2016-07-01T18:57:56Z" finished-at="2016-07-01T18:58:18Z">
+      <class name="runTests.TestAdminLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:runTests.TestAdminLogin@1604f19]" name="setup" is-config="true" duration-ms="7391" started-at="2016-07-01T14:57:56Z" finished-at="2016-07-01T14:58:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@23a2f9]" name="testEasy" duration-ms="5621" started-at="2016-06-03T14:00:06Z" finished-at="2016-06-03T14:00:12Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test_successful_Login()[pri:0, instance:runTests.TestAdminLogin@1604f19]" name="test_successful_Login" duration-ms="14107" started-at="2016-07-01T14:58:04Z" finished-at="2016-07-01T14:58:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@23a2f9]" name="afterTest" is-config="true" duration-ms="594" started-at="2016-06-03T14:00:12Z" finished-at="2016-06-03T14:00:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- example.NewTest -->
+        </test-method> <!-- test_successful_Login -->
+      </class> <!-- runTests.TestAdminLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
