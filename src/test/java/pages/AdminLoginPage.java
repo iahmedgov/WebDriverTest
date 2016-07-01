@@ -13,14 +13,14 @@ public class AdminLoginPage {
 	By adminuserID = By.name("user");
 	By adminPassword = By.name("password");
 	By adminSubmit = By.cssSelector("input.button2");
-<<<<<<< HEAD
 
 
-//	userid and password to login HAHA, doing a pull
 
-=======
+
+
+
 //	userid and password to login HAHA, doing a pull - Doing another pull
->>>>>>> branch 'WDT-Branch1' of https://github.com/iahmedgov/WebDriverTest.git
+
 	String pUserid;
 	String pPassword;
 	
