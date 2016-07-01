@@ -13,7 +13,7 @@ public class AdminLoginPage {
 	By adminuserID = By.name("user");
 	By adminPassword = By.name("password");
 	By adminSubmit = By.cssSelector("input.button2");
-//userid and password to login	 
+//	userid and password to login HAHA 
 	String pUserid;
 	String pPassword;
 	
