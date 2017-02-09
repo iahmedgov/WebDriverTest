@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21521" started-at="2016-07-01T18:57:56Z" finished-at="2016-07-01T18:58:18Z">
+  <suite name="Default suite" duration-ms="9467" started-at="2017-02-08T21:47:16Z" finished-at="2017-02-08T21:47:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21521" started-at="2016-07-01T18:57:56Z" finished-at="2016-07-01T18:58:18Z">
-      <class name="runTests.TestAdminLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:runTests.TestAdminLogin@1604f19]" name="setup" is-config="true" duration-ms="7391" started-at="2016-07-01T14:57:56Z" finished-at="2016-07-01T14:58:04Z">
+    <test name="Default test" duration-ms="9467" started-at="2017-02-08T21:47:16Z" finished-at="2017-02-08T21:47:26Z">
+      <class name="Utilities.TestAdminLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Utilities.TestAdminLogin@3bfdc050]" name="setup" is-config="true" duration-ms="8829" started-at="2017-02-08T16:47:16Z" finished-at="2017-02-08T16:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test_successful_Login()[pri:0, instance:runTests.TestAdminLogin@1604f19]" name="test_successful_Login" duration-ms="14107" started-at="2016-07-01T14:58:04Z" finished-at="2016-07-01T14:58:18Z">
+        <test-method status="PASS" signature="test_successful_Login()[pri:0, instance:Utilities.TestAdminLogin@3bfdc050]" name="test_successful_Login" duration-ms="613" started-at="2017-02-08T16:47:25Z" finished-at="2017-02-08T16:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_successful_Login -->
-      </class> <!-- runTests.TestAdminLogin -->
+      </class> <!-- Utilities.TestAdminLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

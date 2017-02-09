@@ -6,15 +6,17 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import Utilities.Page;
+import pages.AdminLandingPage;
 
-public class AdminLoginPage {
+public class AdminLoginPage extends Page {
  
 	WebDriver driver;
 	By adminuserID = By.name("user");
 	By adminPassword = By.name("password");
 	By adminSubmit = By.cssSelector("input.button2");
 
-
+	
 
 
 
@@ -24,6 +26,11 @@ public class AdminLoginPage {
 	String pUserid;
 	String pPassword;
 	
+	public AdminLoginPage(){
+		
+		super();
+		
+	}
 	
 	public AdminLoginPage(WebDriver driver){
 	
@@ -49,84 +56,90 @@ public class AdminLoginPage {
 		
 	}
 	
-	public Boolean verifySubmitPresent() {
-	
+	public Boolean verifySubmitPresent(WebDriver driver) {
+		this.driver = driver;
 //		return driver.findElement(adminSubmit).isDisplayed();
 		return driver.findElements(adminSubmit).size()!= 0;
 	}
 	
 	
-	public void getData(){
-		pUserid = "iahmed";
-		pPassword = "hello8888";
+	public void getData(String oUserid,String oPassword){
+		this.pUserid = oUserid;
+		this.pPassword = oPassword;
 		
 	}
 	
 	
 	
 	
-	public boolean setData(String oUserid,String oPassword){
-	
-		this.getData();
-		oUserid = pUserid;
-		oPassword = pPassword;
+	public void setData(WebDriver driver){
+		this.driver = driver;
 		
+		this.getData("iahmed","hello2222");
+		/*oUserid = pUserid;
+		oPassword = pPassword;*/
+		this.verifySubmitPresent(driver);
+		if (this.verifySubmitPresent(driver)){
+			System.out.println("Submit Button is present on Login page, Continue to log in..");
 		
-		
-		if (!oUserid.equals("")){
+		if (!pUserid.equals("")){
 			
 			if (driver.findElements(adminuserID).size()!= 0){
-				driver.findElement(adminuserID).sendKeys(oUserid);
+				driver.findElement(adminuserID).sendKeys(pUserid);
 			}
 			else {
 				System.out.println("UserID object is missing on login page, exiting");
-				return false;
+				//return false;
 				}	
 			}
 				
 		else {
 			System.out.println("UserID data is missing, exiting");
-			return false;
+			//return false;
 		}
 		
 		
-		if (!oPassword.equals("")){
+		if (!pPassword.equals("")){
 			
 			if (driver.findElements(adminPassword).size()!= 0){
-				driver.findElement(adminPassword).sendKeys(oPassword);
+				driver.findElement(adminPassword).sendKeys(pPassword);
 			}
 			else {
 				System.out.println("Password object is missing on login page, exiting");
-				return false;
+				//return false;
 				}	
 			}
 				
 		else {
 			System.out.println("Password data is missing, exiting");
-			return false;
+			//return false;
 		}
-
+		this.clickSubmit();
+		}
+		else {System.out.println("Submit Button is missing, Cant Log in");}
 		
-		return true;
+		//return true;
 		
 	}
 	
 	
 	public boolean loginToAdmin(){
 	
-		this.verifySubmitPresent();
-		if (this.setData(pUserid, pPassword)){
-
-			this.clickSubmit();
+		if (this.verifySubmitPresent(driver)){
+				System.out.println("Submit Button is present on Login page, Continue to log in..");
+				this.setData(driver);
+				this.clickSubmit();
+		
+			
 		}
-		else {
-			System.out.println("Either of Test Data or Objects are missing");
-			return false;
-		}
-
 		return true;
-	
 	}	
+	
+	public void perform(WebDriver driver, String linkText)
+	{
+		
+	}
+	
 	
 /*	@Test
   public void f() {
