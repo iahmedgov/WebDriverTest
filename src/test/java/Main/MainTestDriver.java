@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import Utilities.Database_Util;
+import Utilities.VirtualFlowParser;
 
 public class MainTestDriver {
 
@@ -12,6 +13,7 @@ public class MainTestDriver {
 	private static ResultSet testRS;
 	public static String sqlMainQuery;
 	private static Connection dbConn;
+	public static VirtualFlowParser vfp;
 	
 	
 	
@@ -33,6 +35,8 @@ public class MainTestDriver {
 		}
 		
 		sqlMainQuery = "Select * from MainTable where Environment = 'QA' and TestType = 'Smoke' and Product = 'VT'";
+		//sqlMainQuery = "Select * from VirtualFlow where Vf_ID = 1";
+		
 		
 		try {
 			testRS = testDB.executeQuery(sqlMainQuery,dbConn);
@@ -73,8 +77,16 @@ public class MainTestDriver {
 				
 				String LoginID = testRS.getString("Login_ID");
 				System.out.println("LoginID is: " + LoginID);
+				
+				String VFID = testRS.getString("Vf_ID");
+				System.out.println("Virtual Flow ID is: " + VFID);
 			
-			
+				vfp = new VirtualFlowParser();
+				vfp.selectVirtualFlow(VFID,dbConn,testDB);
+				
+				/*String virtualFlow = testRS.getString("VF_Flow");
+				System.out.println("Virtual Flow is: " + virtualFlow);*/
+				
 }
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
