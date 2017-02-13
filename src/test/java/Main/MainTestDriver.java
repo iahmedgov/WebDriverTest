@@ -82,7 +82,11 @@ public class MainTestDriver {
 				System.out.println("Virtual Flow ID is: " + VFID);
 			
 				vfp = new VirtualFlowParser();
-				vfp.selectVirtualFlow(VFID,dbConn,testDB);
+				//vfp.selectVirtualFlow(VFID,dbConn,testDB);
+				String MT_VirtualFlow = vfp.getVirtualFlow(VFID,dbConn,testDB);
+				System.out.println("MT_VirtualFlow is: " + MT_VirtualFlow);
+				
+				vfp.executeVirtualFlow(MT_VirtualFlow, vfp);
 				
 				/*String virtualFlow = testRS.getString("VF_Flow");
 				System.out.println("Virtual Flow is: " + virtualFlow);*/
