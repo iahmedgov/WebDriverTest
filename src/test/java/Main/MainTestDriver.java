@@ -14,6 +14,7 @@ public class MainTestDriver {
 	public static String sqlMainQuery;
 	private static Connection dbConn;
 	public static VirtualFlowParser vfp;
+	public static String MT_vtAppName;
 	
 	
 	
@@ -80,11 +81,19 @@ public class MainTestDriver {
 				
 				String VFID = testRS.getString("Vf_ID");
 				System.out.println("Virtual Flow ID is: " + VFID);
+				
+				String AppNameID = testRS.getString("VTappName_ID");
+				System.out.println("AppNameID ID is: " + AppNameID);
+				
+				
 			
 				vfp = new VirtualFlowParser();
 				//vfp.selectVirtualFlow(VFID,dbConn,testDB);
 				String MT_VirtualFlow = vfp.getVirtualFlow(VFID,dbConn,testDB);
 				System.out.println("MT_VirtualFlow is: " + MT_VirtualFlow);
+				
+				MT_vtAppName = vfp.getAppName(AppNameID, dbConn, testDB);
+				System.out.println("MT_vtAppName is: " + MT_vtAppName);
 				
 				vfp.executeVirtualFlow(MT_VirtualFlow, vfp);
 				

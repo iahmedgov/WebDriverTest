@@ -21,6 +21,7 @@ public class VirtualFlowParser {
 	public String virtualFlow;
 	private static ResultSet vfRS;
 	private static Database_Util vfTestDB;
+	public String appName;
 	WebDriver driver;
 	
 	// Define Constants for easy maintenance
@@ -288,6 +289,34 @@ public class VirtualFlowParser {
 		
 	}
 	
+	
+	public String getAppName (String appName_id, Connection vfConn, Database_Util vfTestDB){
+		
+		String appNameQuery = "select * from VTappName where VTappName_ID = "+appName_id;
+		System.out.println("appNameQuery is: " + appNameQuery);
+		
+		try {
+			vfRS = vfTestDB.executeQuery(appNameQuery,vfConn);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			while (vfRS.next()){
+			appName = vfRS.getString("VT_AppName");
+			System.out.println("appName is: " + appName);
+			
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return appName;
+		
+	}
 	
 	
  // @Test
