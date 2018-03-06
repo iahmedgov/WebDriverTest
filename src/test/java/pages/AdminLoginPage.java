@@ -75,7 +75,7 @@ public class AdminLoginPage extends Page {
 	public void setData(WebDriver driver){
 		this.driver = driver;
 		
-		this.getData("iahmed","hello2222");
+		this.getData("iahmed","hello8888");
 		/*oUserid = pUserid;
 		oPassword = pPassword;*/
 		this.verifySubmitPresent(driver);
