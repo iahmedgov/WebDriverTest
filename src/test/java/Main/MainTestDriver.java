@@ -97,8 +97,8 @@ public class MainTestDriver {
 				
 				vfp.executeVirtualFlow(MT_VirtualFlow, vfp);
 				
-				/*String virtualFlow = testRS.getString("VF_Flow");
-				System.out.println("Virtual Flow is: " + virtualFlow);*/
+				String virtualFlow = testRS.getString("VF_Flow");
+				System.out.println("Virtual Flow is: " + virtualFlow);
 				
 				
 }
