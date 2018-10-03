@@ -22,36 +22,44 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/apache-mime4j-0.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/bsh-2.0b4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/cglib-nodep-2.1_3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/commons-exec-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/commons-io-2.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/guava-19.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/hamcrest-core-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/hamcrest-library-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/httpclient-4.5.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/httpcore-4.4.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/httpmime-4.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/jcommander-1.48.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/jna-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/jna-platform-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/netty-3.5.7.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/phantomjsdriver-1.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/libs/testng-6.9.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/selenium-java-2.53.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/selenium-java-2.53.1/selenium-2.53.1/selenium-java-2.53.1-srcs.jar"/>
-	<classpathentry kind="lib" path="C:/Users/iahmed.GOVOLUTION/JDBC/sqljdbc_6.0/enu/jre8/sqljdbc42.jar"/>
+	<classpathentry exported="true" kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/byte-buddy-1.8.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/commons-codec-1.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/commons-exec-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/commons-logging-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/gson-2.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/guava-23.6-jre.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/httpclient-4.5.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/httpcore-4.4.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/okhttp-3.9.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/libs/okio-1.13.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/client-combined-3.12.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.12.0/client-combined-3.12.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Microsoft JDBC Driver 6.0 for SQL Server/sqljdbc42.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/poi-4.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/poi-examples-4.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/poi-excelant-4.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/poi-ooxml-4.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/poi-ooxml-schemas-4.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/poi-scratchpad-4.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/ooxml-lib/xmlbeans-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/commons-codec-1.11.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/commons-collections4-4.2.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/jaxb-api-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/jaxb-core-2.3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/jaxb-impl-2.3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/poi-4.0.0/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/dom4j-1.6.jar/dom4j-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-java-3.12.0/libs/commons-compress-1.18-bin/commons-compress-1.18/commons-compress-1.18.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

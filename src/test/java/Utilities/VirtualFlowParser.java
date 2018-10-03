@@ -4,12 +4,18 @@ import org.testng.annotations.Test;
 import java.util.regex.*;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
+import java.io.File;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import Utilities.Database_Util;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class VirtualFlowParser {
@@ -231,11 +237,28 @@ public class VirtualFlowParser {
 		
 		tokens = new StringTokenizer(virtualFlow, startTag1);
 		
-		System.setProperty("webdriver.firefox.bin", "C:\\Program Files\\firefox-sdk\\bin\\firefox.exe");
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://qa.velocitypayment.com/admin/imtiaz");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		//System.setProperty("webdriver.firefox.bin", "C:\\Program Files\\firefox-sdk\\bin\\firefox.exe");
+		//System.setProperty("webdriver.gecko.driver", "C:\\gecko\\geckodriver.exe");
+		
+		//FirefoxOptions options = new FirefoxOptions();
+		//options.setBinary("C:\\Program Files\\Mozilla Firefox\\firfox.exe");	
+		
+		//DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		//capabilities.setCapability("moz:firefoxOptions", options);
+		
+		//driver = new FirefoxDriver(options);
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		//driver.get("https://qa.velocitypayment.com/admin/imtiaz");
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\chrome\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://qa.velocitypayment.com/admin/imtiaz");
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+      		
+		
 		
 		if (vfp != null)
 		{

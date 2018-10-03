@@ -19,7 +19,7 @@ public class Database_Util {
 	private static Connection conn = null;
 	
 	public static Connection openDBConnection() throws SQLException, Exception {
-		String dbURL = "jdbc:sqlserver://dev-db01; databaseName=GovolutionTestData; user=qa_automation; password=t3st@u70Mat!on;";
+		String dbURL = "jdbc:sqlserver://DEVSERVAG01;databaseName=GovolutionTestData;user=qa_automation;password=t3st@u70Mat!on;";
 		String query = "Select * from MainTable";
 	
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
